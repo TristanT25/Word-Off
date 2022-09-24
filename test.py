@@ -9,7 +9,7 @@ for i in data:
     wordList.append(i)
     
 #Input Prompt
-word = input("Enter a word to find in the dictionary: ")
+word = input("Enter a word to find in the dictionary: ").lower()
 
 if word in wordList:
     print("This word is in the dictionary")
