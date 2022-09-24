@@ -1,6 +1,14 @@
-"""Test file to check if Dictionary work"""
-dictionary = []
+import json
 
+
+#Open and load data.json into wordList
+file = open('data.json')
+data = json.load(file)
+wordList = []
+for i in data:
+    wordList.append(i)
+    
+#Input Prompt
 word = input("Enter a word to find in the dictionary: ")
 
 if word in dictionary:
