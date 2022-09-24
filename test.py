@@ -9,10 +9,12 @@ for i in data:
     wordList.append(i)
     
 #Input Prompt
-word = input("Enter a word to find in the dictionary: ").lower()
+word = []
+while(1):
+    letter = input("Enter a letter: ")
+    word.append(letter)
+    word2 = "".join(word)
+    if (len(word)>3) and (word2 in wordList):
+        print("You lost! Better luck next time.")
+        break
 
-if word in wordList:
-    print("This word is in the dictionary")
-
-else:
-    print("This word is not in the dictionary")
