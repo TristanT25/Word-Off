@@ -11,7 +11,7 @@ for i in data:
 #Input Prompt
 word = input("Enter a word to find in the dictionary: ")
 
-if word in dictionary:
+if word in wordList:
     print("This word is in the dictionary")
 
 else:
